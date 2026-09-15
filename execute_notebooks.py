@@ -8,9 +8,14 @@ import os
 import sys
 import glob
 import argparse
+import warnings
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 from nbconvert.preprocessors.execute import CellExecutionError
+
+# Suppress common warnings during execution
+warnings.filterwarnings('ignore', category=RuntimeWarning, module='zmq')
+warnings.filterwarnings('ignore', category=UserWarning, module='sklearn')
 
 def execute_notebook(notebook_path):
     """
