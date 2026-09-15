@@ -1,0 +1,15 @@
+# Notebook execution script dependencies
+nbformat>=5.0.0
+nbconvert>=6.0.0
+
+# Jupyter kernel support
+jupyter>=1.0.0
+
+# SMT dependencies (required to run the notebooks)
+smt>=2.0.0
+
+# Common scientific computing libraries used by notebooks
+numpy>=1.20.0
+scipy>=1.7.0
+scikit-learn>=1.0.0
+matplotlib>=3.5.0
